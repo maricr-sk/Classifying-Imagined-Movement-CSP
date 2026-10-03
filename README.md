@@ -1,2 +1,4 @@
 # Classifying-Imagined-Movement-CSP
 Classifying imagined left vs. right hand movement from EEG using Common Spatial Pattern filtering and Linear Discriminant Analysis.
+
+This project decodes imagined left and right hand movement from multi-session EEG recordings I collected as part of a BCI course at Columbia. I computed Common Spatial Pattern filters via generalized eigendecomposition, kept the three filters with the largest and smallest eigenvalues, and visualized them as scalp maps to compare class separability before and after spatial filtering. Using the standard deviation of each projected trial as features, I trained a Linear Discriminant Analysis classifier and evaluated it across ten randomized 90/10 train-test splits, reporting mean accuracy and standard error. The analysis also tracks how decoding performance changed across training sessions.
